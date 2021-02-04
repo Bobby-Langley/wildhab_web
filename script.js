@@ -1,3 +1,5 @@
+
+
 function events(){
  fetch("https://wildhab-api-b.web.app/events")
   .then(response => response.json())
@@ -8,3 +10,10 @@ function events(){
   .catch(error => console.log('error', error))
 }
 
+function writeEventData(name) {
+    fetch("https://wildhab-api-b.web.app/events")
+    firebase.database().ref('/events/').set({
+      name: name
+    });
+    return "Success"
+  }

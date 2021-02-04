@@ -4,21 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wildhab Web</title>
+    <link rel="stylesheet" href="styles.css">
+    <script
+  src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+  integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
+  crossorigin="anonymous"></script>
+
 </head>
 <body>
     <h1>Wild Habitat Tests</h1>
     <section>
         Testing functionality
-    <p>
+    <p class = "button">
         <button onclick="events()">Events</button>
+        <button onclick="writeEventData()">New Event</button>
     </p>
     </section>
     <p>
         Input a new event:
         <form action="https://wildhab-api-b.web.app/events" method="POST">
-            <input type="text" name "Event_Name:" value= >
-            Sport: <input type="text" name "Sport:" value= "asd">
-            Hosted By: <input type="text">
+            <input Event Name:  <input type="text" name "Event_Name:" id="name">
+            <input type="submit">
         </form>
     </p>
 
